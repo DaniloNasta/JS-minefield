@@ -1,0 +1,33 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell.mine{
+    text-align: center;
+    font-size: 20px;
+}
+
+.revealed{
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.revealed.mine{
+    background-color: red;
+}
+
+#game-over-message {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
